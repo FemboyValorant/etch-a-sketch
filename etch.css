@@ -1,0 +1,13 @@
+#container {
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.redbox {
+    border: 1px solid lightgray;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+}
+
