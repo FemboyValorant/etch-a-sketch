@@ -13,6 +13,7 @@ button.addEventListener('click', () => {
         // Generate NxN grid
         for (let i = 0; i < boxRowLength; i++){
             for (let j = 0; j < boxRowLength; j++){
+                const randomColor = Math.floor(Math.random()*16777215).toString(16);
                 const box = document.createElement('div');
                 box.classList.add("redbox");
     
