@@ -7,9 +7,9 @@ const button = document.querySelector('#boxConfirm');
 button.addEventListener('click', () => {
     container.innerHTML = ''; // Clear box container
     let boxRowLength = input.value; // variable N for use in N x N grid
-    let boxSize = 1000/boxRowLength; // Size per box
+    let boxSize = 1000*1.0/boxRowLength; // Size per box
 
-    if (boxRowLength <= 100){
+    if (boxRowLength <= 100 && (boxRowLength%2 === 0)){
         // Generate NxN grid
         for (let i = 0; i < boxRowLength; i++){
             for (let j = 0; j < boxRowLength; j++){
